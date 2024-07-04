@@ -1,0 +1,41 @@
+#!/bin/bash
+#
+#####################
+# Author: Dheeraj A
+# Date:  7/4/2024
+# Version: v1
+#
+# This script will report the aws usage
+#
+#####################
+#
+# AWS S3
+# AWS EC2
+# AWS Lambda
+# AWS IAM Users
+#
+#
+set -x
+#
+#
+#List s3 buckets
+echo "prints the  list of s3 buckets"
+aws s3 ls
+
+#list EC2 instances
+echo "prints the list of ec2 instances"
+aws ec2 describe-instances | jq '.Reservations[].Instances[].InstanceId'
+
+#list aws lambda
+echo "prints the list of lambda functions"
+aws lambda list-functions
+
+#list IAM users
+echo "prints the  list of IAM users"
+aws IAM list-users
+
+
+~
+~
+~
+"aws_resource_tracker.sh" 37L, 580B  
