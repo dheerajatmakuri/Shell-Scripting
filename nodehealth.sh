@@ -23,4 +23,3 @@ echo "prints cpu"
 nproc
 
 ps -ef | grep "amazon" | aws -F" " '{print $2}'
-~
