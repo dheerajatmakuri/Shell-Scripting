@@ -9,7 +9,7 @@
 
 set -x    # debug mode
 set -e    # exists the script when there is an error
-set -o pipefail #shows if any command in the script fals it shows failure status
+set -o pipefail #shows if any command in the script fails it shows failure status
 # set -exo pipefail can alos be used instead of above three commands but its not
  a good practice
 
