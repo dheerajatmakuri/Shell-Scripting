@@ -21,4 +21,4 @@ free -g
 echo "prints cpu"
 nproc
 
-ps -ef | grep "amazon" | aws -F" " '{print $2}'
+ps -ef | grep "amazon" | awk -F" " '{print $2}'
