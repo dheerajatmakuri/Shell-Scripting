@@ -32,10 +32,6 @@ aws lambda list-functions
 
 #list IAM users
 echo "prints the  list of IAM users"
-aws IAM list-users
+aws iam list-users
 
 
-~
-~
-~
-"aws_resource_tracker.sh" 37L, 580B  
